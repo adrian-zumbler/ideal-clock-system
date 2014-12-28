@@ -1,5 +1,8 @@
 <?php
 
-class AuxiliarsController extends Appcontroller {
+class AuxiliarsController extends AppController {
 	
+	function index() {
+
+	}
 }
