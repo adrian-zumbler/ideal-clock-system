@@ -28,7 +28,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+		//echo $this->Html->css('cake.generic');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -38,7 +38,13 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <body>
 	<div id="container">
 		<div id="header">
-			<h1>Registro de actividades</h1>
+			<header class="Header">
+				<figure class="Header-imageContainer">
+					<?php echo $this->Html->image('ideal-logo.png', array(
+																'alt' => 'Ideal Contact Center',
+																'class' => 'Header-image')) ?>
+				</figure>
+			</header>
 		</div>
 		<div id="content">
 
