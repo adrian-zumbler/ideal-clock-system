@@ -1,5 +1,5 @@
 
-<div class="content">
+
 	<section class="Checkout">
 		<div class="Checkout-labelStatus" id="status">
 			<span class="Checkout-label">
@@ -24,4 +24,3 @@
 		</div>
 		<button class="Checkout-button">Available</button>
 	</section>
-</div>
