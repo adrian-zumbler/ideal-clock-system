@@ -1,6 +1,8 @@
 low_grey = hsl(0,0,98)
 orange = #e66e12
 blue = #27358a
+red = #c76a58
+light-blue = #4f95b0
 
 body
 	margin 0
@@ -9,6 +11,10 @@ body
 //auxiliar classes
 .max-width
 	width 100%
+.middle-width
+	width 500px
+	float left
+	
 	
 .large
 	width 30px
@@ -23,14 +29,25 @@ body
 	&-blue
 		background blue
 	&-orange
-		background orange	
+		background orange
+	&-red
+		background red
+	&-light-blue
+		background light-blue			
 .levitate
 	&-button
 		border none
 		border-bottom 4px solid rgba(0,0,0,0.6)
 .font
 	&-white
-		color white					
+		color white
+.vertical-align-top
+	vertical-align text-top	
+.margin
+	margin 2em
+.padding
+	padding 1em		
+							
 					
 		
 	
@@ -44,8 +61,8 @@ body
 		height 130px	
 		
 .Checkout
-	width 500px
-	margin 1em auto
+	overflow hidden
+	text-align center
 	&-label
 		border 2px solid orange
 		text-align center
@@ -54,11 +71,15 @@ body
 		padding 1em
 		
 	&-inputContainer
-		text-align center	
+		text-align center
+		margin 0 2em	
 	
 	&-button
-		padding 1em
+		padding 0
 		margin 1em
+		border none
+		&:hover
+			background red
 	
 	 	
 

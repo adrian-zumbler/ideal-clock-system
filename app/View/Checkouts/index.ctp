@@ -1,25 +1,29 @@
 
 	<section class="Checkout">
-		<div class="Checkout-label round bg-orange" id="status">
+		<div class="Checkout-labelContainer middle-width margin">
+			<div class="Checkout-label round bg-orange " id="status">
 			<span class="Checkout-text font-white">
 				Available
 			</span>
+			</div>
+			<div class="Checkout-label round bg-orange " id="clock">
+				<span class="Checkout-text font-white">
+					00:00:50		
+				</span>
+			</div>	
 		</div>
-		<div class="Checkout-label round" id="clock">
-			<span class="Checkout-text">
-				00:00:50		
-			</span>
+		
+		<div class="Checkout-inputContainer middle-width">
+			<button id="1" value="Break" class="Checkout-button rounded squart bg-light-blue font-white">Break</button>
+			<button id="2" value="Flow walker" class="Checkout-button rounded squart bg-light-blue font-white">Flow Walker</button>
+			<button id="3" value="System-failure" class="Checkout-button rounded squart bg-light-blue font-white ">System Failure</button>
+			<button id="4" class="Checkout-button rounded squart bg-light-blue font-white">Client Failure</button>
+			<button id="5" class="Checkout-button rounded squart bg-light-blue font-white">Coaching</button>
+			<button id="6" class="Checkout-button rounded squart bg-light-blue font-white">Training</button>
+			<button id="7" class="Checkout-button rounded squart bg-light-blue font-white">Client training</button>
+			<button id="8" class="Checkout-button rounded squart bg-light-blue font-white">QA Feedback</button>
+			<button id="9" class="Checkout-button rounded squart bg-light-blue font-white">None</button>
+			<button class=" padding margin max-width bg-blue round levitate-button font-white ">Available</button>
 		</div>
-		<div class="Checkout-inputContainer">
-			<button id="1" class="Checkout-button rounded squart">Break</button>
-			<button id="2" class="Checkout-button rounded squart">Flow Walker</button>
-			<button id="3" class="Checkout-button rounded squart">System Failure</button>
-			<button id="4" class="Checkout-button rounded squart">Client Failure</button>
-			<button id="5" class="Checkout-button rounded squart">Coaching</button>
-			<button id="6" class="Checkout-button rounded squart">Training</button>
-			<button id="7" class="Checkout-button rounded squart">Client training</button>
-			<button id="8" class="Checkout-button rounded squart">QA Feedback</button>
-			<button id="9" class="Checkout-button rounded squart">None</button>
-		</div>
-		<button class="Checkout-button max-width bg-blue round levitate-button ">Available</button>
+		
 	</section>

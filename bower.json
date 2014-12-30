@@ -1,0 +1,17 @@
+{
+  "name": "System Clock",
+  "version": "0.1",
+  "homepage": "https://github.com/adrian-zumbler/ideal-clock-system",
+  "authors": [
+    "AdrianM <adrianm1@outlook.com>"
+  ],
+  "description": "Esta es la aplicacion que se utilizara para el chequeo de los agentes",
+  "keywords": [
+    "clock",
+    "time"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}
