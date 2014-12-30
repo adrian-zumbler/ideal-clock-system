@@ -1,19 +1,19 @@
 
 	<section class="Checkout">
 		<div class="Checkout-labelContainer middle-width margin">
-			<div class="Checkout-label round bg-orange " id="status">
-			<span class="Checkout-text font-white">
+			<div class="Checkout-label round bg-orange " >
+			<span class="Checkout-text font-white" id="status" value="Hola">
 				Available
 			</span>
 			</div>
-			<div class="Checkout-label round bg-orange " id="clock">
-				<span class="Checkout-text font-white">
+			<div class="Checkout-label round bg-orange " >
+				<span class="Checkout-text font-white" id="clock">
 					00:00:50		
 				</span>
 			</div>	
 		</div>
 		
-		<div class="Checkout-inputContainer middle-width">
+		<div class="Checkout-inputContainer middle-width" >
 			<button id="1" value="Break" class="Checkout-button rounded squart bg-light-blue font-white">Break</button>
 			<button id="2" value="Flow walker" class="Checkout-button rounded squart bg-light-blue font-white">Flow Walker</button>
 			<button id="3" value="System-failure" class="Checkout-button rounded squart bg-light-blue font-white ">System Failure</button>

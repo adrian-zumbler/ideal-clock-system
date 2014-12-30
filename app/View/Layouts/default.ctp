@@ -65,6 +65,10 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			</p>
 		</div>
 	</div>
+	<?php echo $this->Html->script(array(
+		'http://code.jquery.com/jquery.min.js',
+		'main'));
+			?>
 	<?php echo $this->element('sql_dump'); ?>
 </body>
 </html>
