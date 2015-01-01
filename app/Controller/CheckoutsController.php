@@ -7,7 +7,7 @@ class CheckoutsController extends AppController {
 	}
 
 	function add() {
-		//$this->request->onlyAllow('ajax');
+		$this->request->onlyAllow('ajax');
 		if($this->request->is('post')){
 			$id =  $this->request->data['id'];
 			$data = array(
@@ -16,7 +16,9 @@ class CheckoutsController extends AppController {
 				'user_id' => '1',
 				'auxiliar_id' => $id));
 			$this->Checkout->create();
-			$this->Checkout->save($data);	
+			if($this->Checkout->save($data)) {
+				
+			}	
 		}
 		
 
