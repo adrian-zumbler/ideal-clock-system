@@ -4,26 +4,12 @@ var url = 'http://localhost:8080/ideal-clock-system/'
 var crono = new Chronometer();
 var lblClock = document.getElementById('clock');
 $('.Checkout-button').click(function() {
-	var name = $(this).text();
+	var tagName = $(this).text();
 	var id = $(this).val();
-	lblstatus.innerHTML = name;
-	crono.begin();
+	registerActivity(id, name);
 	
-	$.ajax({
-		url: url + 'checkouts/add',
-		type: 'post',
-		data: {
-			'id': id
-		},
-		success: function() {
-			alert('Cambio de status exitoso')
-		},
-		error: function(error) {
-			alert(error.tostring)
-		} 
-			
-		
-	})
+	
+
 });
 
 $('#available').click(function() {
@@ -39,12 +25,31 @@ function Chronometer() {
 
 	this.begin = function() {
 		setInterval(function(){
-		minutes += 1;
-		console.log(Number(minutes));	
+		minutes += 1;	
 		lblClock.innerHTML =  minutes;
 	},1000);
 	}
 
+}
+
+function registerActivity(id, tagName) {
+	if(id != null) {
+		$.ajax({
+			url: url + 'checkouts/add',
+			type: 'post',
+			data: {
+				'id': id
+			},
+			success: function() {
+				lblstatus.innerHTML = tagName;
+				crono.begin();
+			},
+			error: function(error) {
+				alert(error.tostring)
+			} 
+			
+		});
+	}
 }
 
 

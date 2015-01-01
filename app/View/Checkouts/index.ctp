@@ -26,4 +26,5 @@
 			<button id="available" value="10" class=" padding margin max-width bg-blue round levitate-button font-white ">Available</button>
 		</div>
 		
+		
 	</section>
