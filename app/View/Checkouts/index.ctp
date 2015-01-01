@@ -3,12 +3,12 @@
 		<div class="Checkout-labelContainer middle-width margin">
 			<div class="Checkout-label round bg-orange " >
 			<span class="Checkout-text font-white" id="status" value="Hola">
-				Available
+				Not Status
 			</span>
 			</div>
 			<div class="Checkout-label round bg-orange " >
 				<span class="Checkout-text font-white" id="clock">
-					00:00:50		
+					00:00:00		
 				</span>
 			</div>	
 		</div>
@@ -26,5 +26,5 @@
 			<button id="available" value="10" class=" padding margin max-width bg-blue round levitate-button font-white ">Available</button>
 		</div>
 		
-		
+
 	</section>
