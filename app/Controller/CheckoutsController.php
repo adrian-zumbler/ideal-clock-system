@@ -17,19 +17,9 @@ class CheckoutsController extends AppController {
 				'auxiliar_id' => $id));
 			$this->Checkout->create();
 			if($this->Checkout->save($data)) {
-				
+
 			}	
 		}
-		
-
-
-		/*$this->request->onlyAllow('ajax');
-		if($this->request->is('post')) {
-			$this->Checkout->create();
-			if($this->Checkout->save()) {
-
-			}
-		}*/
 
 	}
 }

@@ -13,9 +13,11 @@ $('.Checkout-button').click(function() {
 });
 
 $('#available').click(function() {
-	name = $(this).text();
-	id = $(this).val();
-	lblstatus.innerHTML = name;
+	var tagName = $(this).text();
+	var id = $(this).val();
+	crono = new Chronometer();
+	crono.reset();
+	registerActivity(id, tagName);
 });
 
 function Chronometer() {
@@ -32,8 +34,9 @@ function Chronometer() {
 		if (minutes > 58) {
 			hours++;
 			minutes = -1;
-		}	
+		}
 		seconds++;
+		seconds = (seconds < 10)? '0' + seconds: seconds
 		lblClock.innerHTML =  hours + ':' + minutes + ':' + seconds;
 	},1000);
 	}
