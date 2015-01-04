@@ -29,7 +29,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('main');
+		echo $this->Html->css(array(
+			'main',
+			'bootstrap.min'));
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -67,7 +69,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	</div>
 	<?php echo $this->Html->script(array(
 		'http://code.jquery.com/jquery.min.js',
-		'main'));
+		'main',
+		'bootstrap.min'));
 			?>
 	<?php echo $this->element('sql_dump'); ?>
 </body>

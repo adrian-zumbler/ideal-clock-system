@@ -1,6 +1,6 @@
 
 	<section class="Checkout">
-		<div class="Checkout-labelContainer middle-width margin ">
+		<div class="Checkout-labelContainer col-md-6 ">
 			<div class="Checkout-label round bg-orange " >
 			<span class="Checkout-text font-white" id="status" value="Hola">
 				Not Status
@@ -13,7 +13,7 @@
 			</div>	
 		</div>
 		
-		<div class="Checkout-inputContainer middle-width vertical-align-top" >
+		<div class="Checkout-inputContaine col-md-6" >
 			<button id="1" value="1" class="Checkout-button rounded squart bg-light-blue font-white">Break</button>
 			<button id="2" value="2" class="Checkout-button rounded squart bg-light-blue font-white">Flow Walker</button>
 			<button id="3" value="3" class="Checkout-button rounded squart bg-light-blue font-white ">System Failure</button>
