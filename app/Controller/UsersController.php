@@ -12,7 +12,7 @@ class UsersController extends AppController {
 	}
 
 	function login() {
-		
+
 	}
 
 	function add() {
@@ -21,7 +21,9 @@ class UsersController extends AppController {
 		if($this->request->is('post')) {
 			$this->User->create();
 			if($this->User->save($this->request->data)) {
-				$this->Session->setFlash(__('El usuario se cargo correctamente'));
+				$this->Session->setFlash('El usuario se agrego correctamente',
+					'default',
+					array('class' => 'alert alert-success'));
 			} else {
 				$this->Session->setFlash(__('Imposible realizar la acción'));
 			}

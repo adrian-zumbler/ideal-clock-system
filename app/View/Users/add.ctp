@@ -51,8 +51,9 @@
                                     ));
 
         echo $this->Form->end($buttonStyle);
-
-
     ?>
+    
 
 </section>
+
+<?php echo $this->Session->flash(); ?>
