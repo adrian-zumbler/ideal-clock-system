@@ -11,6 +11,10 @@ class UsersController extends AppController {
 
 	}
 
+	function login() {
+		
+	}
+
 	function add() {
 		$this->set('roles',$this->getRoles());
 
